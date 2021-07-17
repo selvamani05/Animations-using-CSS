@@ -1,0 +1,33 @@
+a{
+    position: relative;
+    text-decoration: none;
+ }
+
+a::after{
+    border-radius: 1em;
+    border-top: .1em solid rebeccapurple;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:hover::after{
+   padding-bottom: 0px;
+}
+
+/* animation using transitions */
+
+a:hover::after{
+    right: 0;
+}
+
+p{
+    font-size: 30px;
+}
